@@ -68,7 +68,13 @@ Run your application node app.js.
 node index.js
 ```
  - The frames are extracted to the `/resource/images` folder.
-
+ 
+ ```
+{
+    keyframeTimeOffset : <NUMBER>,
+    image : <BUFFER>
+}
+```
 
 
 
