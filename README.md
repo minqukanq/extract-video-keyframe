@@ -7,8 +7,32 @@ The `resource/sample` folder contains sample video *sample.mp4*  for keyframe ex
 
 <img width="1296" alt="스크린샷 2019-09-19 오후 7 57 56" src="https://user-images.githubusercontent.com/26805817/65238539-d5d8d980-db17-11e9-8d0e-9e87b807ddc1.png">
 
+___
 
+If you want real image data without header, try following:
 
+```
+        /*
+            Extract compressed image data
+            Start of sacn (SOS) ~~~ End of image (EOI)
+                FF DA           ~~           FF D9
+        */
+       let MARKER_START = "255218"; // SOS Header FF DA
+       let MARKER_END = "255217"; // EOI Header FF D9
+
+       let frameBuffer = JSON.stringify(keyframes[0].image);
+       frameBuffer = frameBuffer.replace(/[^0-9]/g,"");
+
+       var start = frameBuffer.indexOf(MARKER_START);
+       console.log(start)
+       var end = frameBuffer.indexOf(MARKER_END);
+       console.log(end)
+
+       compressed_image_data = frameBuffer.substring(start + 6, end);
+       fs.writeFileSync("target.txt", '\ufeff' + frameBuffer.substring(start + 6, end), {encoding: 'utf8'});
+       <img width="498" alt="스크린샷 2019-09-19 오후 8 02 45" src="https://user-images.githubusercontent.com/26805817/65238998-edfd2880-db18-11e9-9cfb-132f85c7ebc3.png">
+```
+You can get the image data in *target.txt* file
 
 ## Getting Started
 
