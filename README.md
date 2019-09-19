@@ -5,7 +5,7 @@ The `resource/sample` folder contains sample video *sample.mp4*  for keyframe ex
 
 <img width="838" alt="스크린샷 2019-09-19 오후 5 59 27" src="https://user-images.githubusercontent.com/26805817/65231881-2d247d00-db0b-11e9-9150-cdb694d241f8.png">
 
-'''
+```
 Started
 Finish: { totalFrames: 8 }
 [ { keyframeTimeoffset: 0,
@@ -32,7 +32,7 @@ Finish: { totalFrames: 8 }
   { keyframeTimeoffset: 58.416667,
     image:
      <Buffer ff d8 ff e0 00 10 4a 46 49 46 00 01 02 00 00 01 00 01 00 00 ff fe 00 10 4c 61 76 63 35 38 2e 35 34 2e 31 30 30 00 ff db 00 43 00 08 04 04 04 04 04 05 ... > } ]
-'''
+```
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
