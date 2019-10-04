@@ -16,7 +16,7 @@ If you want real image data without header, try following:
         /*
             Extract compressed image data
             Start of sacn (SOS) ~~~ End of image (EOI)
-                FF DA           ~~           FF D9
+                 FF DA          ~~~        FF D9
         */
        let MARKER_START = "255218"; // SOS Header FF DA
        let MARKER_END = "255217"; // EOI Header FF D9
