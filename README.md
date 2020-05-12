@@ -10,6 +10,7 @@ The `resource/sample` folder contains sample video *sample.mp4*  for keyframe ex
 ___
 
 If you want real image data without header, try following:
+
 <img width="498" alt="스크린샷 2019-09-19 오후 8 02 45" src="https://user-images.githubusercontent.com/26805817/65238998-edfd2880-db18-11e9-9cfb-132f85c7ebc3.png">
 
 ```
