@@ -60,7 +60,7 @@ This project has the following dependencies:
 
 You can install and save dependencies:
 ```
-npm install extract-video-keyframe --save
+npm install extract-keyframes --save
 ```
 
 
