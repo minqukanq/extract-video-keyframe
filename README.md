@@ -58,7 +58,7 @@ This project has the following dependencies:
   }
 ```
 
-You can install and save dependencies:
+You can install and save the above dependencies:
 ```
 npm install extract-keyframes --save
 ```
